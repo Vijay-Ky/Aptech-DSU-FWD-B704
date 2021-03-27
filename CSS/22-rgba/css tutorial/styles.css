@@ -1,0 +1,23 @@
+/* RGBA A-opacity/transparency 0-1 */
+
+
+#image
+{
+  filter: blur(8px);
+}
+.container
+{
+  position: relative;
+}
+
+.text
+{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+}
+
+
+
+

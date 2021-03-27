@@ -1,0 +1,11 @@
+/* grouping selectors */
+
+/* body
+{
+  color: red;
+} */
+
+ h1,h2,p
+{
+  color: green;
+} 
