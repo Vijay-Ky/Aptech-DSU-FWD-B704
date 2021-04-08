@@ -1,0 +1,97 @@
+REACT
+--------------
+1. setup
+2. Basics
+3. React hooks
+4. Context API
+5. React Router
+6. Project
+
+React is a javascript library for building user interfaces
+
+----------
+1. React developed by facebook 2011
+2. Competetors Angular, Vue, Svelte
+3. Components = User Interfaces 
+   - React is all about components, components nothing but independent chunks of user interfaces.
+   components can be small as one html element.
+   - Benifits of the component is we can build independent, isolated, reuseable user interfaces.
+   - we can have any number of components but at least one component we will be having.
+     called root component.
+   - combining all the small pieces of components we can build a large application.
+   - changing the logic or layout in one component will not break other.
+   - once the component is built we can use it throught our application.
+   - but component code still stored in one place, if we want to make some change we dont have
+     to bother simply we can locate the component and apply the changes, then all the instaces 
+     will be automatically updated.
+4. Root component, Component Tree
+5. Independence
+6. Reusability
+7. Speed
+   - behind the scenes react is using virtual dom, the only component needs to be updated is affected.
+     its done without rerendering the whole application. in turn which increases the speed of the 
+     final product. as well as user experience.
+
+Requirements
+----------------
+1. HTML
+2. CSS
+3. Javascript(ES6)
+
+
+Developement Environment
+--------------------------
+1. Node - https://nodejs.org/en/download/
+2. node --version, minimum 5.2.0 (npx)
+3. browser =  chrome
+4. TextEditor = visual studio code
+5. React Developer Tools for chrome
+
+----------------------
+- to see react based website just press cntr + shift + i and look for the profiler and components
+- if the website using react react developer tools extension will be visible.
+
+----------------
+install important extensions for VS code
+-----------------
+
+Working with terminal
+---------------------
+PWD - Full Pathname to current working directory
+ls - List of Directories
+MKDIR - create a directory/folder
+cd - change directory
+cd .. - navigate to parent/ one level up
+clear - clear the console
+Arrow up/down - previous commands
+
+
+NPM(Node Package Manager)
+-------------
+npm init = creates package.json(manifest) file.list dependencies
+npm install <package-name> --save = install package locally(default) and add to package.json
+npm install <package-name> -g = install package globally(access anywhere) sudo
+npm install <package-name> --save-dev = use it only in development.
+
+-------------
+- create testing folder and trigger npm init name it app and everything default then press ok
+
+- to open integrated terminal in vs code press cntr + `
+- randomely installing dependency 
+  npm install bootstrap --save
+
+  node_modules will be created and it indicates list of dependencies.
+
+
+
+setting up react app
+ --------------------------------------
+1. easiest way is Create React App
+2. usage of Babel turning ES6 code to ES5
+3. webpack - works as a module bundler
+
+in order to bootstrap a fresh react app
+go to one new folder
+trigger - npx create-react-app tutorial
+
+
