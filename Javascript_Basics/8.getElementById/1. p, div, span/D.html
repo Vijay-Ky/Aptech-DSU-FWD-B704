@@ -1,0 +1,29 @@
+<div id="d1">hello from div</div>
+<div id="d2">hello from div</div>
+<span id="s1">hello from span</span>
+<br/>
+<input type="button" value="change to uppercase" onclick="read()"/>
+<input type="button" value="change to lowercase" onclick="read2()"/>
+
+<script>
+    function read()
+    {
+        var v1 = document.getElementById("d1");
+        var v2 = document.getElementById("d2");
+        var v3 = document.getElementById("s1");
+        //we can change the body content by assigning new value to innerHTML
+        v1.innerHTML = v1.innerHTML.toUpperCase();
+        v2.innerHTML = v2.innerHTML.toUpperCase();
+        v3.innerHTML = v3.innerHTML.toUpperCase();
+    }
+    function read2()
+    {
+        var v1 = document.getElementById("d1");
+        var v2 = document.getElementById("d2");
+        var v3 = document.getElementById("s1");
+        //we can change the body content by assigning new value to innerHTML
+        v1.innerHTML = v1.innerHTML.toLowerCase();
+        v2.innerHTML = v2.innerHTML.toLowerCase();
+        v3.innerHTML = v3.innerHTML.toLowerCase();
+    }
+</script>

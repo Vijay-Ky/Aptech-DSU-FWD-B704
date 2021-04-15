@@ -31,6 +31,10 @@ React is a javascript library for building user interfaces
    - behind the scenes react is using virtual dom, the only component needs to be updated is affected.
      its done without rerendering the whole application. in turn which increases the speed of the 
      final product. as well as user experience.
+8. React app run in the browser they dont run in the server.we dont have to wait for the 
+   server response to get a new page or render something new.
+9. we can split any webpage into components
+10. we can think of components as customized html elements.
 
 Requirements
 ----------------
@@ -77,7 +81,7 @@ npm install <package-name> --save-dev = use it only in development.
 - create testing folder and trigger npm init name it app and everything default then press ok
 
 - to open integrated terminal in vs code press cntr + `
-- randomely installing dependency 
+- randomly installing dependency 
   npm install bootstrap --save
 
   node_modules will be created and it indicates list of dependencies.
@@ -93,5 +97,65 @@ setting up react app
 in order to bootstrap a fresh react app
 go to one new folder
 trigger - npx create-react-app tutorial
+
+after trigger npm start
+ 
+automatically http://localhost:3000 react app will be running
+-------------------------
+if you get stuck in the running app try this
+Run npm install to update packages
+
+then run npm audit fix to fix vulnerabilities
+
+Finally close all browser tab to free up RAM. I have seen node processes take a significant amount of memory.
+
+npm run build
+
+Run npm start and the development server spins up within a minute or two.
+
+--------------------------
+
+using code pen for first quick example
+
+- go to codepen.io then click on start coding to create a pen
+
+
+- write the code and select settings in js section and select react and choose the preprocessor
+ as babel.
+ add external packages
+ 1. https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js
+ 2. https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js
+ Babel is a JavaScript compiler
+ Babel is a toolchain that is mainly used to convert ECMAScript 2015+ 
+ code into a backwards compatible version of JavaScript in current and 
+ older browsers or environments.
+ ---------
+write our first react componet
+a react component is just a function
+
+
+
+if some dependency is missing or accidentaly deleted just run - npm install
+
+
+delete all the unnecessary files in the src folder except index.js file 
+
+
+
+----------------------------------------------------------------
+difference between sinlge page application and multi page application
+------------
+SPA                                                           
+--
+- only one html page, content is (re)rendered on client
+- typically only one ReactDOM.render() call
+
+
+
+
+MPA
+--
+- multiple html pages, content is rendered on server
+- one ReactDOM.render() call per "widget"
 
 
